@@ -10,7 +10,7 @@ const Home= ()=>{
   <h4 className="card-title h4 pb-2"><strong>My adventure</strong></h4>
 
   <div className="view overlay my-4">
-    <img src="http://localhost:5000/images/exteriorDetail4.JPG" className="img-fluid" alt=""/>
+    <img src="https://bossdetail-api.com/images/exteriorDetail4.JPG" className="img-fluid" alt=""/>
     <a href="#home">
       <div className="mask rgba-white-slight"></div>
     </a>

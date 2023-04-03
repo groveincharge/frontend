@@ -16,7 +16,6 @@ const Comment = () => {
 
    async function handleSubmit(event) {
     event.preventDefault();
-   // alert(JSON.stringify(inputs));
 
      // api callback to login route.
      await   Axios({
@@ -27,11 +26,9 @@ const Comment = () => {
         comment: inputs.comment,
       },
       withCredentials: true,
-      url: "http://localhost:5000/comment",
+      url: "https://bossdetail-api.com/comment",
     }).then((res) => {
       
-console.log(`res.data from inside comment after call to backend ${JSON.stringify(res.data)}`);
-// console.log(`userCookie from inside login after call to backend ${JSON.stringify(userCookie)}`);
 setInputs({}) 
     });
 
@@ -50,7 +47,7 @@ setInputs({})
   <div className="row">
 
     <div className="column">
-    <img src="http://localhost:5000/images/interiorCar2.JPG" alt=" " style={{width: '100%', height: '100%'}}/>
+    <img src="https://bossdetail-api.com/images/interiorCar2.JPG" alt=" " style={{width: '100%', height: '100%'}}/>
     </div>
 
     <div className="column bg-light">

@@ -9,7 +9,7 @@ const About= ()=>{
     method: "GET",
     headers: { 'Content-Type': 'application/json' },
     withCredentials: true,
-    url: "http://localhost:5000/users",
+    url: "https://bossdetail-api.com/users",
   }).then((res) => {
 console.log(`user from inside about after call to backend ${JSON.stringify(res.data)}`);
 // console.log(`userCookie from inside login after call to backend ${JSON.stringify(userCookie)}`)
