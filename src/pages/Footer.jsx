@@ -8,7 +8,7 @@ const Footer = () => {
     
           <div className="col-md-6">
             <div className="embed-responsive embed-responsive-16by9 mb-4">
-              <iframe className="embed-responsive-item" src="https://bossdetail-api.com/videos/intro.mp4"
+              <iframe className="embed-responsive-item" src="https://bossdetail-api.onrender.com/videos/intro.mp4"
                 allowFullScreen title="topic video"></iframe>
             </div>
           </div>

@@ -28,7 +28,7 @@ const Login = ({isloggedin, setIsloggedin}) => {
                   password: inputs.password,
                 },
                 withCredentials: true,
-                url: "https://bossdetail-api.com/login",
+                url: "https://bossdetail-api.onrender.com/login",
               }).then((res) => {
                 
         // store user details and jwt token in local storage to keep user logged in between page refreshes

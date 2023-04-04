@@ -23,7 +23,7 @@ console.log(inputs);
         headers: {'Content-Type': 'application/json'},
         data: inputs,
         withCredentials: true,
-        url: "https://bossdetail-api.com/register"
+        url: "https://bossdetail-api.onrender.com/register"
       }).then((res) => {
         console.log(`res.data from inside login after call to backend ${JSON.stringify(res.data)}`);
         setInputs({}) 

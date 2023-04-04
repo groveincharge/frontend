@@ -11,7 +11,7 @@ const LogoutPage = () => {
     method: "POST",
     headers: { 'Content-Type': 'application/json' },
     withCredentials: true,
-    url: "https://bossdetail-api.com/logout",
+    url: "https://bossdetail-api.onrender.com/logout",
   }).then((res) => {
 console.log(`result from inside logout after call to backend ${JSON.stringify(res.data)}`);
 // console.log(`userCookie from inside login after call to backend ${JSON.stringify(userCookie)}`)

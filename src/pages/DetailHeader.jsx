@@ -6,7 +6,7 @@ function DetailHeader() {
   return (    
     <div className="row d-flex justify-content-center bg-primary">
       <section className="col-md-3 mt-5">
-      <img src="https:bossdetail-api.com/images/detailogo.png" className="img-fluid" alt=" " style={{width: '75%' ,height: '75%'}}/>
+      <img src="https:bossdetail-api.onrender.com/images/detailogo.png" className="img-fluid" alt=" " style={{width: '75%' ,height: '75%'}}/>
       </section>
       <section className="col-md-9" >
        <h1>Grovers Detailing Service</h1>
