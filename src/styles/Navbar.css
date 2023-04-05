@@ -1,14 +1,14 @@
-a:hover {
-	background-color: #4666c5;
-    border-radius: 2px;
-}
-
-.active{
-   background-color:hsl(253, 91%, 46%);
-   border-radius: 2px;
-}
-
 .search{
   margin-left: 50px;
 
+}
+
+  .nav-link:hover {
+	background-color: hwb(222 27% 23%);
+    border-radius: 2px;
+}
+
+.active {
+   background-color:rgb(10, 153, 224);
+   border-radius: 2px;
 }
