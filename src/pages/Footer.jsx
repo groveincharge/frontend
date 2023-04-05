@@ -1,3 +1,6 @@
+import React from "react";
+import intro from "./../projectvideos/intro.mp4";
+
 const Footer = () => {
 
     return(
@@ -8,7 +11,7 @@ const Footer = () => {
     
           <div className="col-md-6">
             <div className="embed-responsive embed-responsive-16by9 mb-4">
-              <iframe className="embed-responsive-item" src="https://bossdetail-api.onrender.com/videos/intro.mp4"
+              <iframe className="embed-responsive-item" src={intro}
                 allowFullScreen title="topic video"></iframe>
             </div>
           </div>

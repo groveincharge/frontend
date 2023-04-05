@@ -1,12 +1,13 @@
 import './../styles/DetailHeader.css';
 import React from 'react';
+import mylogo from "./../projectimages/detailogo.png";
 
 
 function DetailHeader() {
   return (    
     <div className="row d-flex justify-content-center bg-primary">
       <section className="col-md-3 mt-5">
-      <img src="https://bossdetail-api.onrender.com/images/detailogo.png" className="img-fluid" alt=" " style={{width: '75%' ,height: '75%'}}/>
+      <img src={mylogo} className="img-fluid" alt=" " style={{width: '75%' ,height: '75%'}}/>
       </section>
       <section className="col-md-9" >
        <h1>Grovers Detailing Service</h1>

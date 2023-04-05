@@ -1,4 +1,5 @@
 import React from "react";
+import blkmustank from "./../projectimages/exteriorDetail4.JPG";
 
 const Home= ()=>{
 
@@ -10,7 +11,7 @@ const Home= ()=>{
   <h4 className="card-title h4 pb-2"><strong>My adventure</strong></h4>
 
   <div className="view overlay my-4">
-    <img src="https://bossdetail-api.onrender.com/images/exteriorDetail4.JPG" className="img-fluid" alt=""/>
+    <img src={blkmustank} className="img-fluid" alt=""/>
     <a href="#home">
       <div className="mask rgba-white-slight"></div>
     </a>

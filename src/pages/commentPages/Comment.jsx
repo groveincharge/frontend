@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from 'react';
 import Axios from 'axios'
 import "./../../styles/Comment.css"
+import commentpicture from "./../../projectimages/interiorCar2.JPG";
 
 const Comment = () => {
   const [inputs, setInputs] = useState({});
@@ -47,7 +48,7 @@ setInputs({})
   <div className="row">
 
     <div className="column">
-    <img src="https://bossdetail-api.com/images/interiorCar2.JPG" alt=" " style={{width: '100%', height: '100%'}}/>
+    <img src={commentpicture} alt=" " style={{width: '100%', height: '100%'}}/>
     </div>
 
     <div className="column bg-light">
