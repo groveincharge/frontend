@@ -1,10 +1,11 @@
 import React from "react";
 import intro from "./../projectvideos/intro.mp4";
+import "./../styles/Footer.css";
 
 const Footer = () => {
 
     return(
-    <div>
+    <div className="container">
     <footer className="page-footer font-small mdb-color darken-3 pt-4">
     
         <div className="row d-flex justify-content-center">

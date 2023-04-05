@@ -5,7 +5,7 @@ import { useEffect } from "react";
 function Navbar({isloggedin}) {
 
   //selected link
-   let activePage = window.location.pathname;
+   //let activePage = window.location.pathname;
 
    //match selected link and add active attribute
   useEffect(() => {
@@ -18,7 +18,7 @@ function Navbar({isloggedin}) {
     }
   })
  
-  },[activePage])
+  },[])
   
   
 
