@@ -40,22 +40,22 @@ function Navbar({isloggedin}) {
     <div className="collapse navbar-collapse" id="mynavbar">
       <ul className="navbar-nav me-auto nav-justified">
         <li className="nav-item">
-          <a className="nav-link"  href="/">Home</a>
+          <a className="nav-link"  href="/https://bossdetail.onrender.com">Home</a>
         </li>
         <li className="nav-item" style={{display: isloggedin? 'none': 'block'}}>
-          <a className="nav-link" href="/login">Login</a>
+          <a className="nav-link" href="https://bossdetail.onrender.com/login">Login</a>
         </li>
         <li className="nav-item" style={{display: isloggedin? 'none': 'block'}}>
-          <a className="nav-link"  href="/register">Register</a>
+          <a className="nav-link"  href="https://bossdetail.onrender.com/register">Register</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/about">About</a>
+          <a className="nav-link" href="https://bossdetail.onrender.com/about">About</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link"  href="/comment">Comment</a>
+          <a className="nav-link"  href="https://bossdetail.onrender.com/comment">Comment</a>
         </li>
         <li className="nav-item" style={{display: isloggedin? 'block': 'none'}}>
-          <a className="nav-link" href="/logout">Logout</a>
+          <a className="nav-link" href="https://bossdetail.onrender.com/logout">Logout</a>
         </li>
       </ul>
 
