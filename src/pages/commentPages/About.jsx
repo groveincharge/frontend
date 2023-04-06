@@ -27,7 +27,7 @@ console.log(`user from inside about after call to backend ${JSON.stringify(res.d
               your lacation, or you can bring the vehicle to the detail lot in <big>Norfolk</big>.
                We use only bio-degradable products
               for a chemical free cleaning. Most procedures are done
-              by hand with limited machinary. The Full Detail Service usually
+              by hand with limited machinery. The Full Detail Service usually
               takes 2-3 hours. Call today and make an appointment to
               have your vehicle detailed. The people at <big>bossdetail.onrender.com</big> know that
               our customers are the foundation of our business. We have been detailing

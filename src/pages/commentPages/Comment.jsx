@@ -40,18 +40,19 @@ setInputs({})
   return(
     <div className="container">
 
-  <div>
-    <h2>Contact Us</h2>
-    <p>Swing by for a cup of coffee, or leave us a message:</p>
-  </div>
 
   <div className="row">
 
     <div className="column">
+    <p>Interior looking <big>good</big> after a full detail. This vehicle
+       belongs to a smoker, so it was bad on the inside. looking
+       much <big>better</big> now!
+    </p>
     <img src={commentpicture} alt=" " style={{width: '100%', height: '100%'}}/>
     </div>
 
     <div className="column bg-light">
+    <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
 
            <div className="form-group">

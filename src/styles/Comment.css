@@ -11,6 +11,9 @@
     margin-bottom: 16px;
     resize: vertical;
   }
+  h2 {
+    text-align: center;
+  }
   
   input[type=submit] {
     background-color: #04AA6D;
