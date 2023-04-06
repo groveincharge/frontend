@@ -4,6 +4,22 @@ import { useEffect } from "react";
 
 function Navbar({isloggedin}) {
 
+     //selected link
+     let activePage = window.location.pathname;
+
+     //match selected link and add active attribute
+    useEffect(() => {
+    const navlinks = document.querySelectorAll('.nav-link')
+  
+    navlinks.forEach(link => {
+  
+      if (window.location.href === link.href){
+        link.classList.add('active')
+      }
+    })
+   
+    },[activePage])
+
 
   return (
   <div className="bg-dark nav">
@@ -23,22 +39,22 @@ function Navbar({isloggedin}) {
     <div className="collapse navbar-collapse" id="mynavbar">
       <ul className="navbar-nav me-auto nav-justified">
         <li className="nav-item">
-          <Link to="/" className="active">Home</Link>
+          <Link to="/" className="nav-link">Home</Link>
         </li>
         <li className="nav-item" style={{display: isloggedin? 'none': 'block'}}>
-          <Link to="/login" className="active">Login</Link>
+          <Link to="/login" className="nav-link">Login</Link>
         </li>
         <li className="nav-item" style={{display: isloggedin? 'none': 'block'}}>
-          <Link to="./register" className="active">Register</Link>
+          <Link to="./register" className="nav-link">Register</Link>
         </li>
         <li className="nav-item">
-          <Link to="/about" className="active">About</Link>
+          <Link to="/about" className="nav-link">About</Link>
         </li>
         <li className="nav-item">
-          <Link to="/comment" className="active">Comment</Link>
+          <Link to="/comment" className="nav-link">Comment</Link>
         </li>
         <li className="nav-item" style={{display: isloggedin? 'block': 'none'}}>
-          <Link to="./logout" className="active">Logout</Link>
+          <Link to="./logout" className="nav-link">Logout</Link>
         </li>
       </ul>
 

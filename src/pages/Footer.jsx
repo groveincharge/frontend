@@ -1,6 +1,6 @@
 import React from "react";
 import "./../styles/Footer.css";
-import PlayerComponent from './PlayerComponent';
+import intro from "./../projectvideos/intro.mp4";
 
 const Footer = () => {
 
@@ -8,11 +8,15 @@ const Footer = () => {
     <div className="container">
     <footer className="page-footer font-small mdb-color darken-3 pt-4">
     
-        <div className="row">
+    <div className="row d-flex justify-content-center">
+
           <div className="col-md-6">
-            <PlayerComponent/>
-          </div>
-    
+            <div className="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe className="embed-responsive-item" src={intro}
+                    allowFullScreen title="topic video"></iframe>
+            </div>
+         </div>
+
           <div className="col-md-6 justify-content-right" >
           <h5 className="text-uppercase font-weight-bold">Footer text 1</h5>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil

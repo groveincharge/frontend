@@ -8,9 +8,10 @@
     border-radius: 2px;
 }
  .active {
+    
     border-radius: 2px;
 }
 .nav-item {
-  color: #fff;
+  color: #000;
   padding-right: 1.5rem;
 }

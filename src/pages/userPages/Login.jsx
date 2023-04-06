@@ -36,6 +36,7 @@ const Login = ({isloggedin, setIsloggedin}) => {
        setIsloggedin(true)
        setInputs({}) 
        navigate("/");
+       alert('Login successful')
               });
 
   }; //end function handleSumit()
