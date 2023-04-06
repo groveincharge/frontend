@@ -42,8 +42,8 @@ const Login = ({isloggedin, setIsloggedin}) => {
   }; //end function handleSumit()
 
   return (
-    <div className='row bg-info'>
-      <section className="col-md-6">
+    <div className='row'>
+      <section className="col-md-6 bg-info">
     <form onSubmit={handleSubmit}>
 
       <div className='form-group'>
@@ -78,7 +78,7 @@ const Login = ({isloggedin, setIsloggedin}) => {
     <section className="col-md-6 bg-light">
       <h1>User Login</h1>
       <p>
-        Users must be registered in order to login. Please remember your password for future sessions. This app
+        <big>Users</big> must be <big>registered</big> in order to login. Please remember your password for future sessions. This app
         is dedicated to <big>Grovers Detailing Service</big>. Any information shared with us is strictly confidential
         and is only used for service purposes. we appreciate our customer base, and welcome you to the website.  
       </p>

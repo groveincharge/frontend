@@ -105,10 +105,10 @@ console.log(inputs);
         <button type='submit'>Submit</button>
     </form>
     </section>
-    <section className='col-md-6'>
+    <section className='col-md-6 bg-light'>
       <h1>Register an Account</h1>
       <p>
-        Customers, Auto detailers & Auto Detailing fans are encouraged to sign into the website. Where your can 
+        <big>Customers, Auto detailers & Auto Detailing</big> fans are encouraged to sign into the website. Where your can 
         set appointments, look up procedures and get some product analysis. We are here to help you improve
         the look of your vehicle.
       </p>
