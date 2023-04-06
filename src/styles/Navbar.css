@@ -3,12 +3,14 @@
 
 }
 
-  .nav-link:hover {
+  a:hover {
 	background-color: hwb(222 27% 23%);
     border-radius: 2px;
 }
-
-.active {
-   background-color:rgb(10, 153, 224);
-   border-radius: 2px;
+ .active {
+    border-radius: 2px;
+}
+.nav-item {
+  color: #fff;
+  padding-right: 1.5rem;
 }

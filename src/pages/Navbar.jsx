@@ -1,30 +1,13 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import "./../styles/Navbar.css";
 import { useEffect } from "react";
 
 function Navbar({isloggedin}) {
 
-  //selected link
-   //let activePage = window.location.pathname;
-
-   //match selected link and add active attribute
-  useEffect(() => {
-  const navlinks = document.querySelectorAll('a')
-
-  navlinks.forEach(link => {
-
-    if (window.location.href === link.href){
-      link.classList.add('active')
-    }
-  })
- 
-  },[])
-  
-  
 
   return (
   <div className="bg-dark nav">
-    <nav className="navbar navbar-expand-md navbar-dark">
+    <nav className="navbar navbar-expand-md navbar-dark justify-content-end">
     <a className="navbar-brand" href="#mynavbar">bossdetail.com</a>
     <button className="navbar-toggler" 
             type="button" 
@@ -40,22 +23,22 @@ function Navbar({isloggedin}) {
     <div className="collapse navbar-collapse" id="mynavbar">
       <ul className="navbar-nav me-auto nav-justified">
         <li className="nav-item">
-          <a className="nav-link"  href="/">Home</a>
+          <Link to="/" className="active">Home</Link>
         </li>
         <li className="nav-item" style={{display: isloggedin? 'none': 'block'}}>
-          <a className="nav-link" href="/login">Login</a>
+          <Link to="/login" className="active">Login</Link>
         </li>
         <li className="nav-item" style={{display: isloggedin? 'none': 'block'}}>
-          <a className="nav-link"  href="/register">Register</a>
+          <Link to="./register" className="active">Register</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/about">About</a>
+          <Link to="/about" className="active">About</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link"  href="/comment">Comment</a>
+          <Link to="/comment" className="active">Comment</Link>
         </li>
         <li className="nav-item" style={{display: isloggedin? 'block': 'none'}}>
-          <a className="nav-link" href="/logout">Logout</a>
+          <Link to="./logout" className="active">Logout</Link>
         </li>
       </ul>
 

@@ -3,11 +3,11 @@
 }
 
  a:hover {
-	background-color: hsl(158, 52%, 52%);
+	background-color: #fff;
     border-radius: 2px;
 }
 
 .footer-copyright .active {
-   background-color:hwb(129 4% 12%);
+   background-color:rgb(10, 188, 224);
    border-radius: 2px;
 }
