@@ -19,9 +19,11 @@ const Footer = () => {
 
           <div className="col-md-6 justify-content-right" >
           <h5 className="text-uppercase font-weight-bold">Footer text 1</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-              repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-              harum esse fugiat. Itaque, culpa?
+            <p>Call <bold> Grovers Detailing Service</bold> for your Next detail job. We do <big>Full Details</big>, that 
+            includes interior & exterior recovery procedures. If your vehicle color is fading, and the interior needs
+             some attention. Grovers Detailing Servce will happy to you restore your vehicle's look. We do polishing,
+             sap removal, scratch removal, wet sanding and clay bar procedures. Call Grover at (757)-581-9156 today, and set
+             an appointment. We appreciate you business!
             </p>
         </div>
     

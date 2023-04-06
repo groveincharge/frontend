@@ -108,7 +108,9 @@ console.log(inputs);
     <section className='col-md-6'>
       <h1>Register an Account</h1>
       <p>
-        
+        Customers, Auto detailers & Auto Detailing fans are encouraged to sign into the website. Where your can 
+        set appointments, look up procedures and get some product analysis. We are here to help you improve
+        the look of your vehicle.
       </p>
     </section>
     </div>
