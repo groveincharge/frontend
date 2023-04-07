@@ -1,8 +1,9 @@
 import React from 'react'
+import './Interior.css';
 
 function InteriorDetail() {
   return (
-    <div>
+    <div className='interior'>
         <ul>
             <li>Door Jambs</li>
             <li>Dust & Clean Dashboard/Center Console</li>

@@ -11,6 +11,8 @@ import Comment from './pages/commentPages/Comment';
 import ProtectedRoutes from './pages/ProtectedRoutes';
 import DetailHeader from './pages/DetailHeader';
 import CostCards from './pages/pricePages/CostCards';
+import InteriorDetail from "./pages/pricePages/InteriorDetail";
+import ExteriorDetail from "./pages/pricePages/ExteriorDetail";
 
 
 import { useState, useEffect } from 'react';
@@ -39,16 +41,18 @@ function App() {
         <Route path="/" element={<Navbar 
                                     isloggedin={isloggedin}
                                   />}>
-          <Route index element={<Home />} />
-          <Route path="/register" element={<Register/>} />
-          <Route path="/login" element={<Login setIsloggedin={setIsloggedin}/>} />
+          <Route index element={<Home />}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/login" element={<Login setIsloggedin={setIsloggedin}/>}/>
   
           <Route path="/" element={<ProtectedRoutes/>}>
-            <Route path="/logout" element={<Logout/>} />
+            <Route path="/logout" element={<Logout/>}/>
             <Route path="/about" element={<About/>} />
-            <Route path="/comment" element={<Comment/>} />
-            <Route path="/cost" element={<CostCards/>} />
-            <Route path="*" element={<NoPage />} />
+            <Route path="/comment" element={<Comment/>}/>
+            <Route path="/cost" element={<CostCards/>}/>
+            <Route path="/cost/interior" element={<InteriorDetail/>}/>
+            <Route path="/cost/exterior" element={<ExteriorDetail/>}/>
+            <Route path="*" element={<NoPage />}/>
           </Route>
         </Route>
       </Routes>
