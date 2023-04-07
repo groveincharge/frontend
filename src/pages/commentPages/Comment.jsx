@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import Axios from 'axios'
-import "./../../styles/Comment.css"
+import "./../styles/Comment.css"
 import commentpicture from "./../../projectimages/interiorCar2.JPG";
 
 const Comment = () => {

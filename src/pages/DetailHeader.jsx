@@ -1,4 +1,4 @@
-import './../styles/DetailHeader.css';
+import './styles/DetailHeader.css';
 import React from 'react';
 import mylogo from "./../projectimages/detailogo.png";
 

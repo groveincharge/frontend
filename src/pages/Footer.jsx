@@ -1,5 +1,5 @@
 import React from "react";
-import "./../styles/Footer.css";
+import "./styles/Footer.css";
 import intro from "./../projectvideos/intro.mp4";
 
 const Footer = () => {

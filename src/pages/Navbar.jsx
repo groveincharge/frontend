@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import "./../styles/Navbar.css";
+import "./styles/Navbar.css";
 import { useEffect } from "react";
 
 function Navbar({isloggedin}) {
