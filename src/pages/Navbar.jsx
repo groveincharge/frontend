@@ -53,6 +53,9 @@ function Navbar({isloggedin}) {
         <li className="nav-item">
           <Link to="/comment" className="nav-link">Comment</Link>
         </li>
+        <li className="nav-item">
+          <Link to="/cost" className="nav-link">Cost</Link>
+        </li>
         <li className="nav-item" style={{display: isloggedin? 'block': 'none'}}>
           <Link to="./logout" className="nav-link">Logout</Link>
         </li>
