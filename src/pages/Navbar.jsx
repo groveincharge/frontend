@@ -56,6 +56,9 @@ function Navbar({isloggedin}) {
         <li className="nav-item" style={{display: isloggedin? 'block': 'none'}}>
           <Link to="./logout" className="nav-link">Logout</Link>
         </li>
+        <li className="nav-item" style={{display: isloggedin? 'block': 'none'}}>
+          <Link to="./makeAppointment" className="nav-link">Appointments</Link>
+        </li>
       </ul>
 
       <form className="d-flex search" >

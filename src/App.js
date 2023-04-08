@@ -10,6 +10,10 @@ import About from './pages/commentPages/About';
 import Comment from './pages/commentPages/Comment';
 import ProtectedRoutes from './pages/ProtectedRoutes';
 import DetailHeader from './pages/DetailHeader';
+import MakeAppointment from './pages/appointmentPages/MakeAppointment';
+import Address from './pages/appointmentPages/Address';
+
+
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -36,15 +40,17 @@ function App() {
         <Route path="/" element={<Navbar 
                                     isloggedin={isloggedin}
                                   />}>
-          <Route index element={<Home />} />
-          <Route path="/register" element={<Register/>} />
-          <Route path="/login" element={<Login setIsloggedin={setIsloggedin}/>} />
+          <Route index element={<Home />}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/login" element={<Login setIsloggedin={setIsloggedin}/>}/>
   
           <Route path="/" element={<ProtectedRoutes/>}>
-            <Route path="/logout" element={<Logout/>} />
-            <Route path="/about" element={<About/>} />
-            <Route path="/comment" element={<Comment/>} />
-            <Route path="*" element={<NoPage />} />
+            <Route path="/logout" element={<Logout/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/comment" element={<Comment/>}/>
+            <Route path="/address" element={<Address/>}/>
+            <Route path="/makeAppointment" element={<MakeAppointment/>}/>
+            <Route path="*" element={<NoPage/>}/>
           </Route>
         </Route>
       </Routes>

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import "./../styles/Footer.css";
 import intro from "./../projectvideos/intro.mp4";
 
@@ -30,7 +31,7 @@ const Footer = () => {
       </div>
     
       <div className="footer-copyright text-center py-3">© 2023 Copyright:
-        <a className="active" href="/products"> MDBootstrap.com</a>
+        <Link to="/makeAppointment">Make an Appointment</Link>
       </div>
     
     </footer>
