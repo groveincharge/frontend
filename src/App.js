@@ -10,6 +10,9 @@ import About from './pages/commentPages/About';
 import Comment from './pages/commentPages/Comment';
 import ProtectedRoutes from './pages/ProtectedRoutes';
 import DetailHeader from './pages/DetailHeader';
+import CostCards from "./pages/pricePages/CostCards";
+import InteriorDetail from "./pages/pricePages/InteriorDetail";
+import ExteriorDetail from "./pages/pricePages/ExteriorDetail";
 import MakeAppointment from './pages/appointmentPages/MakeAppointment';
 import Address from './pages/appointmentPages/Address';
 
@@ -47,6 +50,9 @@ function App() {
             <Route path="/logout" element={<Logout/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/comment" element={<Comment/>}/>
+            <Route path="/cost" element={<CostCards/>}/>
+            <Route path="/cost/interior" element={<InteriorDetail/>}/>
+            <Route path="/cost/exterior" element={<ExteriorDetail/>}/>
             <Route path="/address" element={<Address/>}/>
             <Route path="/makeAppointment" element={<MakeAppointment/>}/>
             <Route path="*" element={<NoPage/>}/>

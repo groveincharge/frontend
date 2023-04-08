@@ -1,4 +1,6 @@
 import intro from "./../projectvideos/intro.mp4";
+import { Link } from "react-router-dom";
+import "./styles/Footer.css"
 
 const Footer = () => {
 
@@ -16,17 +18,19 @@ return(
       </div>
 
       <div className="col-md-6">
-      <h5 className="text-uppercase font-weight-bold">Footer text 1</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil
-          repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae
-          harum esse fugiat. Itaque, culpa?
+      <h5 className="text-uppercase font-weight-bold">Detail Magic</h5>
+        <p>
+          Call or make appointment with <big>Grovers Detailing Service</big> for your next
+          detail job. We have been detailing since 2004. We do <big>interior detail</big>, <big>exterior detail</big>
+           and <big>full detail</big>. Use the links in the menu to check procedures and base prices. <big>Tar</big>, 
+          <big>sap</big> and <big>overspray</big> removal services are also available. We get the job done.
         </p>
     </div>
 
   </div>
 
   <div className="footer-copyright text-center py-3">© 2023 Copyright:
-    <a href="/"> MDBootstrap.com</a>
+    <Link to="./makeAppointment">Make Appointment</Link>
   </div>
 
 </footer>

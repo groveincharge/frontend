@@ -8,7 +8,7 @@ const Home= ()=>{
       
 <div className="jumbotron text-center">
 
-  <h4 className="card-title h4 pb-2"><strong>My adventure</strong></h4>
+  <h4 className="card-title h4 pb-2"><strong>Featured Detail</strong></h4>
 
   <div className="view overlay my-4">
     <img src={blkmustank} className="img-fluid" alt=""/>
@@ -17,9 +17,12 @@ const Home= ()=>{
     </a>
   </div>
 
-  <h5 className="indigo-text h5 mb-4">Photography</h5>
+  <h5 className="indigo-text h5 mb-4">Ford Mustang</h5>
 
-  <p className="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+  <p className="card-text">
+    <big>Experience</big> the <big>difference</big> with a detail from <big>Grovers Detailing Servive</big>.
+    we have <big>done</big> it before!
+    </p>
 
   
   <a className="fa-lg p-2 m-2 li-ic" href="#home"><i className="fab fa-linkedin-in grey-text"></i></a>

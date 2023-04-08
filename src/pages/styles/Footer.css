@@ -1,18 +1,13 @@
 .page-footer {
     border-radius: 2px;
 }
-
- a:hover {
-	background-color: #000;
-    border-radius: 2px;
-}
-
 .footer-copyright .active {
    background-color:rgb(10, 188, 224);
    border-radius: 2px;
 }
 h5 {
     text-align: center;
+    color: #000;
 }
 big{
  font-size: 1.5 rem;

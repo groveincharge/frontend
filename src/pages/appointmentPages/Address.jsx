@@ -47,7 +47,7 @@ const Address = ({appointment}) => {
       <section className='col-md-6'>
     <form onSubmit={handleSubmit}>
     <div className='form-group'>
-    <label htmlFor='userid'>Enter Phone Number:
+    <label htmlFor='userid'>User Id:
       <input 
         type="text" 
         name="userid" 
@@ -73,7 +73,7 @@ const Address = ({appointment}) => {
       </div>
 
       <div className='form-group'>
-      <label htmlFor='street'>Enter your last name:
+      <label htmlFor='street'>Enter Street Address:
       <input 
         type="text" 
         name="street" 
@@ -127,7 +127,7 @@ const Address = ({appointment}) => {
         </div>
 
         <div className='form-group'>
-      <label htmlFor='appointment'>Appointment
+      <label htmlFor='appointment'>Appointment with calendar:
         <input 
           type="text" 
           name="appointment" 
