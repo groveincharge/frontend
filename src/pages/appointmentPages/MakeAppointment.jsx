@@ -12,7 +12,7 @@ const [selectedDate, setSelectedDate] = useState(null)
   if (!selectedDate) {
     return (
         <div>
-    <h5 className='header'>Click on the box for calender.</h5>
+    <h5 className='header'>Click Appointment Calender.</h5>
      <Datepicker
         controls={['date', 'time']}
         dateFormat="DDD d MMM, yyyy"

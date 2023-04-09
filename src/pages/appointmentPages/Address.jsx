@@ -3,25 +3,22 @@ import  Axios  from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const Address = ({appointment}) => {
+
   const [inputs, setInputs] = useState({});
-  const [userId, setUserId] = useState(" ");
 
   const navigate = useNavigate();
+  const user = JSON.parse(localStorage.getItem('user_id')?localStorage.getItem('user_id'):" ");
 
   useEffect(() => {
-    setUserId(localStorage.getItem('user_id')?localStorage.getItem('user_id'):" ");
-  },[])
+    setInputs({appointment, user})
+  },[appointment, user]);
+
 
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
     setInputs(values => ({...values, [name]: value}))
   }
-  console.log('inputs--->')
-  console.log(JSON.stringify(inputs));
-
-  console.log('appointment--->')
-  console.log(appointment)
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -33,11 +30,11 @@ const Address = ({appointment}) => {
         headers: {'Content-Type': 'application/json'},
         data: inputs,
         withCredentials: true,
-        url: "https://bossdetail-api.onrender.com/makeAppointment"
+        url: "https://bossdetail-api.onrender.com/appointment"
       }).then((res) => {
         console.log(`res.data from inside Address.jsx after call to backend ${JSON.stringify(res.data)}`);
         setInputs({}) 
-        navigate(-1);
+        navigate("/");
           });
 
       };
@@ -45,19 +42,8 @@ const Address = ({appointment}) => {
   return (
     <div className='row bg-info'>
       <section className='col-md-6'>
+
     <form onSubmit={handleSubmit}>
-    <div className='form-group'>
-    <label htmlFor='userid'>User Id:
-      <input 
-        type="text" 
-        name="userid" 
-        placeholder='64553-7363'
-        className='form-control'
-        value={userId || ""} 
-        onChange={handleChange}
-      />
-      </label>
-      </div>
 
     <div className='form-group'>
     <label htmlFor='phone'>Enter Phone Number:
@@ -121,20 +107,6 @@ const Address = ({appointment}) => {
           placeholder='Zipcode'
           className='form-control'
           value={inputs.zipcode || ""} 
-          onChange={handleChange}
-        />
-        </label>
-        </div>
-
-        <div className='form-group'>
-      <label htmlFor='appointment'>Appointment with calendar:
-        <input 
-          type="text" 
-          name="appointment" 
-          id='appointment'
-          placeholder='Appointment'
-          className='form-control'
-          value={appointment||""} 
           onChange={handleChange}
         />
         </label>
