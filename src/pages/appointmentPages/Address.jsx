@@ -32,7 +32,7 @@ const Address = ({appointment}) => {
         withCredentials: true,
         url: "https://bossdetail-api.onrender.com/appointment"
       }).then((res) => {
-        console.log(`res.data from inside Address.jsx after call to backend ${JSON.stringify(res.data)}`);
+        console.log(res.data)
         setInputs({}) 
         navigate("/");
           });
