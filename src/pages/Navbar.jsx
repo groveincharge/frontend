@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import "./styles/Navbar.css";
 import { useEffect } from "react";
+import mylogo from "./../projectimages/detailogo.png";
 
 function Navbar({isloggedin}) {
 
@@ -24,7 +25,12 @@ function Navbar({isloggedin}) {
   return (
   <div className="bg-dark nav">
     <nav className="navbar navbar-expand-md navbar-dark justify-content-end">
-    <a className="navbar-brand" href="#mynavbar">bossdetail.com</a>
+      <div className="col-md-4 mylogo">
+    <img src={mylogo} className="img-fluid" alt=" " style={{width: '25%' ,height: '25%'}}/>
+    <a className="navbar-brand" href="#mynavbar">(757) 581-9156</a>
+    </div>
+   
+   <div className="col-md-8 pages">
     <button className="navbar-toggler" 
             type="button" 
             data-toggle="collapse" 
@@ -63,11 +69,7 @@ function Navbar({isloggedin}) {
           <Link to="./makeAppointment" className="nav-link">Appointments</Link>
         </li>
       </ul>
-
-      <form className="d-flex search" >
-        <input className="form-control me-2" type="text" placeholder="Search"/>
-        <button className="btn btn-primary" type="button">Search</button>
-      </form>
+  </div>
   </div>
 </nav>
 <Outlet/>

@@ -6,7 +6,7 @@ const Footer = () => {
 
 return(
 <div>
-<footer className="page-footer font-small mdb-color darken-3 pt-4">
+<footer className="page-footer font-small mdb-color darken-3">
 
     <div className="row d-flex justify-content-center">
 

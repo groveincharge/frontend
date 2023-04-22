@@ -1,5 +1,7 @@
 .page-footer {
     border-radius: 2px;
+    margin-top: 0%;
+    padding-top: 0%;
 }
 .footer-copyright .active {
    background-color:rgb(10, 188, 224);

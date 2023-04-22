@@ -9,7 +9,6 @@ import NoPage from './pages/NoPage';
 import About from './pages/commentPages/About';
 import Comment from './pages/commentPages/Comment';
 import ProtectedRoutes from './pages/ProtectedRoutes';
-import DetailHeader from './pages/DetailHeader';
 import CostCards from "./pages/pricePages/CostCards";
 import InteriorDetail from "./pages/pricePages/InteriorDetail";
 import ExteriorDetail from "./pages/pricePages/ExteriorDetail";
@@ -37,7 +36,6 @@ function App() {
       <div className='container'>
       
       <BrowserRouter >
-      <DetailHeader/>
        <Routes>
         <Route path="/" element={<Navbar 
                                     isloggedin={isloggedin}
@@ -45,6 +43,7 @@ function App() {
           <Route index element={<Home />}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/login" element={<Login setIsloggedin={setIsloggedin}/>}/>
+          <Route path="*" element={<NoPage/>}/>
   
           <Route path="/" element={<ProtectedRoutes/>}>
             <Route path="/logout" element={<Logout/>}/>
@@ -54,8 +53,7 @@ function App() {
             <Route path="/cost/interior" element={<InteriorDetail/>}/>
             <Route path="/cost/exterior" element={<ExteriorDetail/>}/>
             <Route path="/address" element={<Address/>}/>
-            <Route path="/makeAppointment" element={<MakeAppointment/>}/>
-            <Route path="*" element={<NoPage/>}/>
+            <Route path="/makeAppointment" element={<MakeAppointment/>}/> 
           </Route>
         </Route>
       </Routes>

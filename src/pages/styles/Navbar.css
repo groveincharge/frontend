@@ -15,3 +15,12 @@
   color: #000;
   padding-right: 1.5rem;
 }
+.mylogo{
+  justify-items: auto;
+}
+a{
+  padding: 1.5rem;
+}
+img{
+  border-radius: 3px;
+}

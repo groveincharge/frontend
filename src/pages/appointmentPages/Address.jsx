@@ -35,6 +35,7 @@ const Address = ({appointment}) => {
         console.log(res.data)
         setInputs({}) 
         navigate("/");
+        alert('Appointment made, expect a call to confirm.')
           });
 
       };
@@ -50,7 +51,7 @@ const Address = ({appointment}) => {
       <input 
         type="text" 
         name="phone" 
-        placeholder='1-(757)-555-5555'
+        placeholder='000-000-0000'
         className='form-control'
         value={inputs.phone || ""} 
         onChange={handleChange}
@@ -63,7 +64,7 @@ const Address = ({appointment}) => {
       <input 
         type="text" 
         name="street" 
-        placeholder='#2555 Mystreet apt# 34'
+        placeholder='street address'
         className='form-control'
         value={inputs.street || ""} 
         onChange={handleChange}
@@ -76,7 +77,7 @@ const Address = ({appointment}) => {
       <input 
         type="text" 
         name="city" 
-        placeholder='Norfolk'
+        placeholder='city'
         className='form-control'
         value={inputs.city|| ""} 
         onChange={handleChange}
@@ -90,7 +91,7 @@ const Address = ({appointment}) => {
           type="text" 
           name="state" 
           id='state'
-          placeholder='virginia'
+          placeholder='state'
           className='form-control'
           value={inputs.state || ""} 
           onChange={handleChange}
@@ -104,7 +105,7 @@ const Address = ({appointment}) => {
           type="number" 
           name="zipcode" 
           id='zipcode'
-          placeholder='Zipcode'
+          placeholder='zipcode'
           className='form-control'
           value={inputs.zipcode || ""} 
           onChange={handleChange}
