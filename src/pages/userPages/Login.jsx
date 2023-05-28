@@ -1,10 +1,12 @@
 import React from "react";
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from "react-router-dom";
-import Axios from 'axios'
+import Axios from 'axios';
+import AuthContext from "./../../context/AuthContext";
 
-const Login = ({isloggedin, setIsloggedin}) => {
+const Login = () => {
 
+  const auth = useContext(AuthContext)
   const [inputs, setInputs] = useState({});
 
   const navigate = useNavigate();
@@ -33,10 +35,10 @@ const Login = ({isloggedin, setIsloggedin}) => {
                 
         // store user details and jwt token in local storage to keep user logged in between page refreshes
        localStorage.setItem('user_id', JSON.stringify(res.data._id));
-       setIsloggedin(true)
-       setInputs({}) 
+       auth.login();
+       setInputs({}); 
        navigate("/");
-       alert('Login successful')
+       alert('Login successful');
               });
 
   }; //end function handleSumit()

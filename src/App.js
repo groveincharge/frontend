@@ -14,15 +14,14 @@ import InteriorDetail from "./pages/pricePages/InteriorDetail";
 import ExteriorDetail from "./pages/pricePages/ExteriorDetail";
 import MakeAppointment from './pages/appointmentPages/MakeAppointment';
 import Address from './pages/appointmentPages/Address';
-
-
-import { useState, useEffect } from 'react';
+import AuthContext from "./context/AuthContext";
+import { useState } from 'react';
 
 function App() {
 
-  const [isloggedin, setIsloggedin] = useState(false)
+  const [authstatus, setauthstatus] = useState(false);
 
-   useEffect(()=>{
+  const login = ()=> {
     const user_id = localStorage.getItem('user_id');
     if (user_id){
       setIsloggedin(true)
@@ -30,19 +29,17 @@ function App() {
   else {
     setIsloggedin(false)
   }
-   },[])
-
+}
   return (
       <div className='container'>
       
       <BrowserRouter >
+      <AuthContext.Provider value={{ status: authstatus, login: login }}>
        <Routes>
-        <Route path="/" element={<Navbar 
-                                    isloggedin={isloggedin}
-                                  />}>
+        <Route path="/" element={<Navbar/>}>
           <Route index element={<Home />}/>
           <Route path="/register" element={<Register/>}/>
-          <Route path="/login" element={<Login setIsloggedin={setIsloggedin}/>}/>
+          <Route path="/login" element={<Login/>}/>
           <Route path="*" element={<NoPage/>}/>
   
           <Route path="/" element={<ProtectedRoutes/>}>
@@ -58,6 +55,7 @@ function App() {
         </Route>
       </Routes>
       <Footer/>
+      </AuthContext.Provider>
     </BrowserRouter>
     </div>
     

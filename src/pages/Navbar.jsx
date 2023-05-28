@@ -1,10 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
 import "./styles/Navbar.css";
-import { useEffect } from "react";
-import mylogo from "./../projectimages/detailogo.png";
+import { useEffect, useContext } from "react";
+import mylogo from "./../projectimages/GDSlogo.png";
+import AuthContext from "./../context/AuthContext";
 
-function Navbar({isloggedin}) {
+function Navbar() {
 
+  const auth = useContext(AuthContext);
      //selected link
      let activePage = window.location.pathname;
 
@@ -47,10 +49,10 @@ function Navbar({isloggedin}) {
         <li className="nav-item">
           <Link to="/" className="nav-link">Home</Link>
         </li>
-        <li className="nav-item" style={{display: isloggedin? 'none': 'block'}}>
+        <li className="nav-item" style={{display: auth.status? 'none': 'block'}}>
           <Link to="/login" className="nav-link">Login</Link>
         </li>
-        <li className="nav-item" style={{display: isloggedin? 'none': 'block'}}>
+        <li className="nav-item" style={{display: auth.status? 'none': 'block'}}>
           <Link to="./register" className="nav-link">Register</Link>
         </li>
         <li className="nav-item">
@@ -59,13 +61,13 @@ function Navbar({isloggedin}) {
         <li className="nav-item">
           <Link to="/comment" className="nav-link">Comment</Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" style={{display: auth.status? 'block': 'none'}}>
           <Link to="/cost" className="nav-link">Cost</Link>
         </li>
-        <li className="nav-item" style={{display: isloggedin? 'block': 'none'}}>
+        <li className="nav-item" style={{display: auth.status? 'block': 'none'}}>
           <Link to="./logout" className="nav-link">Logout</Link>
         </li>
-        <li className="nav-item" style={{display: isloggedin? 'block': 'none'}}>
+        <li className="nav-item" style={{display: auth.status? 'block': 'none'}}>
           <Link to="./makeAppointment" className="nav-link">Appointments</Link>
         </li>
       </ul>
