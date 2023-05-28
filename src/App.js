@@ -24,10 +24,10 @@ function App() {
   const login = ()=> {
     const user_id = localStorage.getItem('user_id');
     if (user_id){
-      setIsloggedin(true)
+      setauthstatus(true)
     }
   else {
-    setIsloggedin(false)
+    setauthstatus(false)
   }
 }
   return (
