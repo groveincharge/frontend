@@ -40,11 +40,11 @@ function App() {
           <Route index element={<Home />}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/about" element={<About/>}/>
           <Route path="*" element={<NoPage/>}/>
   
           <Route path="/" element={<ProtectedRoutes/>}>
             <Route path="/logout" element={<Logout/>}/>
-            <Route path="/about" element={<About/>}/>
             <Route path="/comment" element={<Comment/>}/>
             <Route path="/cost" element={<CostCards/>}/>
             <Route path="/cost/interior" element={<InteriorDetail/>}/>
