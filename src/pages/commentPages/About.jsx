@@ -32,7 +32,8 @@ console.log(`user from inside about after call to backend ${JSON.stringify(res.d
               have your vehicle detailed. The people at <big>bossdetail.onrender.com</big> know that
               our customers are the foundation of our business. We have been detailing
               in the Tidewater area since <big>2004</big>. This is the experience that our
-              customers enjoy.
+              customers enjoy. Plus https://groversdetailservice.blogspot.com provides products and procedures
+              relevant for achieving awesome results.
             </p>
           </div>
     
