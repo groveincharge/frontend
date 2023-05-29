@@ -1,5 +1,7 @@
 import React from "react";
 import Axios from 'axios';
+import {Link} from "react-router-dom";
+import "./../styles/About.css"
 
 
 const About= ()=>{
@@ -32,8 +34,8 @@ console.log(`user from inside about after call to backend ${JSON.stringify(res.d
               have your vehicle detailed. The people at <big>bossdetail.onrender.com</big> know that
               our customers are the foundation of our business. We have been detailing
               in the Tidewater area since <big>2004</big>. This is the experience that our
-              customers enjoy. Plus https://groversdetailservice.blogspot.com provides products and procedures
-              relevant for achieving awesome results.
+              customers enjoy. Plus<Link to="https://groversdetailservice.blogspot.com">groversdetailservice.blogspot.com</Link>provides products and procedures
+              relevant and necessary for achieving sparkling results.
             </p>
           </div>
     
